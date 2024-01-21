@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nabila Laksa & Laksam Berkuah</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+
+body {
+ 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:black;
+  margin: 0;
+  
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #FEE600;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center; /* Center the text in the navbar */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color:#FEE600;
+  color: black;
+  }
+  
+  
+   table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px; /* Adjusted font size for better appearance */
+  table-layout: fixed;
+}
+
+th, td {
+  border: 1px solid white;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 100px 10;
+        }
+        .image-container {
+            position: relative;
+            width: 250px; 
+            height: 250px; 
+        }
+
+        .image-container img {
+            width: 250px;
+            height: 250px;
+            border: 3px solid black;
+            border-radius: 16px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .image-container .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 260px;
+            height: 260px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .image-container:hover {
+            transform: scale(1.3);
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .image-container .overlay p {
+            color: white;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="ourmenu.html">Our Menu</a>
+  <a href="price.html">Price</a>
+  <a href="contactus.html">Contact Us</a>
+</div>
+
+<h2>Sample Table</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Drink</th>
+      <th>Price</th>
+      <th>Dish</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Special</td>
+      <td>RM 4.00</td>
+      <td>Laksa & Laksam</td>
+      <td>RM 4.00</td>
+    </tr>
+    <tr>
+      <td>Tea or Coffee</td>
+      <td>Hot:<br> RM1.00<br>Cold:<br> RM 1.50-RM 2.00</td>
+      <td>Laksa & Laksam Special</td>
+      <td>RM 6.00</td>
+    </tr>
+    <tr>
+      <td>Syrup Bandung Barley</td>
+      <td>Hot:<br> RM1.50<br>Cold:<br> RM 2.00-RM 3.50</td>
+      <td>1KG + Sambal + Ulam + Kuah</td>
+      <td>Rm 16.00</td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+
+<h2>Dish</h2>
+    <div class="wrapper">
+        <div class="image-container">
+            <img src="images/pricelaksaL.jpg">
+            <div class="overlay">
+                <p>1 KG Laksa Lemak</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="images/pricelaksaP.jpg">
+            <div class="overlay">
+                <p>1 KG Laksa Pineng</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="images/pricelaksam.jpg">
+            <div class="overlay">
+                <p> 1 KG laksam Lemak</p>
+            </div>
+</div>
+
+</body>
+</html>

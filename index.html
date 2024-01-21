@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nabila Laksa & Laksam Berkuah</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+
+body {
+ 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#FEE600;
+  margin: 0;
+  
+}
+
+.header h1 {
+ font-size: 40px;
+  margin: 10px 0; /* Adjust the top and bottom margin */
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #080808;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+ text-align: center; /* Center the text in the navbar */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  display: inline-block; 
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #080808;
+  color: #FEE600;
+}
+	h1 {
+		color: #080808;
+		font-size: 50px;
+		font-family: Shrikhand;
+		font-weight: bold; 
+        text-align: center;
+		margin: 0;
+		
+	}
+	
+	.hero-text {
+	text-align: center;
+	color: #080808;
+	margin: 25px;
+}
+
+.hero-text button {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+   background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Change color on hover */
+.hero-text button:hover {
+      background-color: black;
+      color: white;
+}
+	
+/* Slideshow styles */
+.slideshow-container {
+  max-width: 350px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styles for slideshow navigation dots */
+.dot-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption-container {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+ .footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            padding: 15px;
+            margin: 10vh 0 0;
+        }
+
+        .footer-section {
+            flex: 10;
+            padding: 2px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #fff;
+        }
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+ <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="ourmenu.html">Our Menu</a>
+  <a href="price.html">Price</a>
+  <a href="contactus.html">Contact Us</a>
+</div>
+	
+ <div class="hero-text">
+  <h1>NABILA LAKSA DAN LAKSAM BERKUAH</h1>
+  <p>Your Satisfaction is Our Priority!!!</p>
+  <button><a href="aboutus.html">Learn More</a></button>
+</div>
+
+<div class="slideshow-container">
+  <div class="mySlides">
+    <img src="images/laksa.jpg" alt="Slide 1">
+    <div class="caption-container">
+      <p>LAKSA</p>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <img src="images/laksam.jpg" alt="Slide 2">
+    <div class="caption-container">
+      <p>LAKSAM</p>
+    </div>
+  </div>
+  
+  <div class="mySlides">
+    <img src="images/kputih.jpg" alt="Slide 3">
+    <div class="caption-container">
+      <p>KUAH MASAK LEMAK PUTIH</p>
+    </div>
+  </div>
+  
+  <div class="mySlides">
+    <img src="images/kpenang.jpg" alt="Slide 4">
+    <div class="caption-container">
+      <p>KUAH LAKSA PENANG</p>
+    </div>
+  </div>
+  
+  <div class="mySlides">
+    <img src="images/ulam.jpg" alt="Slide 5">
+    <div class="caption-container">
+      <p>ULAM-ULAMAN</p>
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change slide every 25 seconds
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+</script>
+
+<footer>
+  <div class="footer">
+    <div class="footer-section">
+      <h3>OPENING HOURS</h3>
+      <p>Tue-Sun: 9:00am - 5:30pm</p>
+   
+    </div>
+
+    <div class="footer-section">
+        <h3>OUR OUTLETS</h3>
+        <p>Lot 2757, Kg Kangkong, 17040 Pasir Mas, Kelantan.</p>
+       
+    </div>
+
+    <div class="footer-section">
+        <h3>CONTACT US</h3>
+        <p>013-9997617</p>
+		<p>019-9877617</p>
+    </div>
+</div>
+</footer>
+    </html>
+</body>
+</html>

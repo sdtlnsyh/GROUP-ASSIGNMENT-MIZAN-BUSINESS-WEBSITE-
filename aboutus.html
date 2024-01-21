@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nabila Laksa & Laksam Berkuah</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #080808;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #FEE600;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #FEE600;
+  color: black;
+}
+
+/* Section styling */
+section {
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 50px;
+  width: 40%
+  position: center;
+}
+
+/* Center align text */
+.center {
+  text-align: center;
+}
+
+.wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 100px 10;
+        }
+        .image-container {
+            position: relative;
+            width: 250px; 
+            height: 250px; 
+        }
+
+        .image-container img {
+            width: 250px;
+            height: 250px;
+            border: 3px solid black;
+            border-radius: 16px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .image-container .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 260px;
+            height: 260px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .image-container:hover {
+            transform: scale(1.3);
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .image-container .overlay p {
+            color: white;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+/* Heading styles */
+h2 {
+  color: white;
+  font-size: 30px;
+  font-family: Shrikhand;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+/* Paragraph styles */
+p {
+  color: black;
+  font-size: 15px;
+  font-family: "Canva Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="ourmenu.html">Our Menu</a>
+  <a href="price.html">Price</a>
+  <a href="contactus.html">Contact Us</a>
+</div>
+
+<section>
+  <p class="center">
+    The Nabila Laksa and Laksam Berkuah story began with the opening of our
+    1st restaurant at Kg Kangkong, Pasir Mas, Kelantan. We currently serve the best
+    Laksa and Laksam in Kelantan made with fresh fish to make the gravy or "kuah" and
+    premium flour for the laksa. As the no.1 Laksa and Laksam in Kangkong, we are
+    constantly working to better serve our customers with great moments, excellent
+    services with the best Laksa and Laksam version of us.
+  </p>
+
+  <p class="center">
+    Not only that, we have two types of gravy which are "Lemak" and "Pineng" where
+    the “Lemak” gravy uses a recipe from Kelantan and a recipe from Pineng. This
+    makes customers love to get Laksa and Laksam at our store.
+  </p>
+</section>
+
+
+  <h2>Services Provided</h2>
+  <br><br>
+  <div class="wrapper">
+        <div class="image-container">
+            <img src="images/catering.jpg">
+            <div class="overlay">
+                <p>catering service</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="images/cod.jpg">
+            <div class="overlay">
+                <p>COD service</p>
+            </div>
+        </div>
+
+
+</body>
+</html>
